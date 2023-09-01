@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/Aluno/Documents/cidades.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="150"/><column_width id="3" width="1450"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:maincidades"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="cidade" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="68"/><column index="3" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="cidades" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="61"/><column index="2" value="138"/><column index="3" value="61"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE produtos (
+    id INTEGER,
+	nome TEXT,
+	valor REAL,
+	quantidade INTEGER
+);
+
+ INSERT INTO produtos (id, nome, valor, quantidade) VALUES(1,&quot;Caneta&quot;,2.99,10);
+
+ SELECT * FROM produtos
+ WHERE valor &gt; 2
+ 
+ UPDATE produtos
+ SET nome = &quot;Lápis&quot;
+ WHERE ID = 1
+ 
+ DELETE FROM produtos
+ WHERE id = 1
+ </sql><sql name="cidades.sql">CREATE TABLE cidade (
+    id INTEGER,
+	nome TEXT,
+	uf TEXT
+);
+
+INSERT INTO cidade (id, nome, uf) VALUES (1,&quot;Gramado&quot;, &quot;RS&quot;);
+INSERT INTO cidade (id, nome, uf) VALUES (2,&quot;Porto Alegre&quot;,&quot;RS&quot;);
+INSERT INTO cidade (id, nome, uf) VALUES (3,&quot;Não me Toque&quot;,&quot;RS&quot;);
+INSERT INTO cidade (id, nome, uf) VALUES (4,&quot;Passo Fundo&quot;,&quot;RS&quot;);
+INSERT INTO cidade (id, nome, uf) VALUES (5,&quot;Carazinho&quot;,&quot;RS&quot;);
+
+SELECT * FROM cidade
+
+UPDATE cidade
+SET nome = &quot;Canela&quot;
+WHERE id = 4
+
+DELETE FROM cidade 
+WHERE id = 5
+
+</sql><current_tab id="1"/></tab_sql></sqlb_project>
